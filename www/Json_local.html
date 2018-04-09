@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> Local storage </title>
+  <script type="text/javascript" src="JS/Json_local.js"></script>
+
+  <style media="screen">
+
+  h1{color: rgb(150, 2, 42);
+      text-align: center;
+      text-decoration: underline;
+      font-family: sans-serif;}
+
+form{border: 2px solid rgb(106, 71, 98);
+            border-radius: 15%;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            padding-right: 15px;
+            padding-left: 15px;
+            text-align: center;
+            margin: auto;}
+table{text-align: center;
+      text-decoration: underline;
+      }
+  </style>
+
+
+</head>
+<body onload="afficher()">
+
+<div>
+  <h1>Liste de course</h1>
+
+  <form>
+    <p>
+      Produit: <br>
+      <input type="text" placeholder="Produit" id="prod">
+    </p>
+
+    <p>
+      Quantité: <br>
+      <input type="text" placeholder="Quantité" id="qnt">
+    </p>
+
+    <p>
+      <input type="button" name="" value="Ajouter" onclick="ajouter()">
+      <input type="button" name="" value="Modifier"
+      onclick="modifier()">
+      <input type="button" name="" value="Supprimer"
+      onclick="Supprimer()">
+    </p>
+
+    <input type="button" name="" value="Effacer tout"
+    onclick="effacer()">
+  </form>
+
+  <table id="resulta">
+
+  </table>
+
+</div>
+
+</body>
+</html>
